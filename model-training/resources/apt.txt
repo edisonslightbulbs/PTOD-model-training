@@ -1,0 +1,4 @@
+pyqt5-dev-tools
+protobuf-compiler
+python3.8-venv
+python3-testresources

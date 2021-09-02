@@ -1,0 +1,7 @@
+ISSUE:
+successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+
+FIX:
+to the file: [ /etc/crontab ] add
+
+@reboot root for a in /sys/bus/pci/devices/*; do echo 0 | tee -a $a/numa_node; done > /dev/null
