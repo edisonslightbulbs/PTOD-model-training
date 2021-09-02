@@ -24,9 +24,12 @@ if [ $# -eq 0 ]; then
     echo "-- installing virtual environment"
 else
     if checkargs "$@"; then
-    echo "-- installing $1 virtual environment"
+        echo "-- installing $1 virtual environment"
     fi
 fi
+
+# pytorch installation link
+# ref: https://pytorch.org/get-started/locally/
 
 # create iff non exists
 if [ -d "$venv" ]; then
@@ -35,6 +38,8 @@ else
     if python3 -m venv "$venv"; then
         source "$venv/bin/activate"
         python3 -m pip install --upgrade pip
+        pip3 install torch==1.9.0+cu111 torchvision==0.10.0+cu111 torchaudio==0.9.0 -f https://download.pytorch.org/whl/torch_stable.html
+        pip3 install --upgrade -r external/yolov5/requirements.txt
         "$wd/scripts/dependencies.sh"
         python3 -m ipykernel install --user --name="$venv"
     else
