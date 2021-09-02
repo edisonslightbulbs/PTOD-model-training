@@ -1,0 +1,6 @@
+[submodule "image-capturing/external/Azure-Kinect-Sensor-SDK"]
+	path = image-capturing/external/Azure-Kinect-Sensor-SDK
+	url = https://github.com/microsoft/Azure-Kinect-Sensor-SDK.git
+[submodule "model-training/external/labelImg"]
+	path = model-training/external/labelImg
+	url = https://github.com/tzutalin/labelImg.git
