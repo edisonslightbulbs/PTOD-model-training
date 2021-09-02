@@ -4,3 +4,6 @@
 [submodule "model-training/external/labelImg"]
 	path = model-training/external/labelImg
 	url = https://github.com/tzutalin/labelImg.git
+[submodule "model-training/external/yolov5"]
+	path = model-training/external/yolov5
+	url = https://github.com/ultralytics/yolov5.git
