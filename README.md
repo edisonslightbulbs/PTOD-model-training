@@ -8,7 +8,7 @@
 ||| :white_square_button:  [ Azure Kinect SDK ](https://github.com/microsoft/Azure-Kinect-Sensor-SDK) |
 ||| :white_square_button:  [ opencv ](https://github.com/opencv/opencv) |
 ||| :white_square_button:  [ Anaconda ](https://www.anaconda.com/products/individual) |
-||| :white_square_button:  [ Tensor Flow models ](https://github.com/tensorflow/models) |
+||| :white_square_button:  [ Yolov5 ](https://github.com/ultralytics/yolov5) |
 ||| :white_square_button:  [ Image annotation tool ](https://github.com/tzutalin/labelImg) |
 
 ---
