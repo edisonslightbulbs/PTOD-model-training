@@ -4,3 +4,4 @@ jupyter
 jupyter-console
 pyqt5
 opencv-python-headless
+lxml

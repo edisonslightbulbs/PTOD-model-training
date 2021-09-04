@@ -12,7 +12,7 @@ wd="$(dirname "$(dirname "$(readlink -f "$0")")")"
 
 # make sure submodules are initialized
 ANNOTATION_TOOL="$wd/external/labelImg"
-TENSORFLOW_MODELS="$wd/external/models"
+YOLOV5="$wd/external/yolov5"
 
 echo "-- checking submodules"
 
@@ -23,7 +23,7 @@ if [ -z "$(ls -A "$ANNOTATION_TOOL")" ]; then
 fi
 
 # Initialize iff submodule dir empty
-if [ -z "$(ls -A "$TENSORFLOW_MODELS")" ]; then
+if [ -z "$(ls -A "$YOLOV5")" ]; then
     command git pull --recurse-submodules -j 12
     command git submodule update --init --recursive -j 12
 fi
