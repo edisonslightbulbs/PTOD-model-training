@@ -1,4 +1,4 @@
-# Model training using TensorFlow's object detection API
+# Model training using PyTorch's object detection API
 
 Given that this project primarily uses scripts, it's helpful to have an idea of the directory structure.
 
