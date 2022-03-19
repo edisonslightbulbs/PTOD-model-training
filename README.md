@@ -1,4 +1,4 @@
-# Transfer learning using TF's object detection API
+# Transfer learning using PyTorch's object detection API
 
 
 |   Platform |   Hardware	|  Dependencies 	|
